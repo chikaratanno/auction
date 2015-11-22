@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
- get '/items' => 'items#index'
+    get '/items/new' => 'items#new'
+    get '/items' => 'items#index'
     get '/items/:id' => 'items#show'
+     post '/items' => 'items#create'
 
 
 
